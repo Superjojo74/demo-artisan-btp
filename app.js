@@ -122,6 +122,16 @@
     });
   }
 
+  /* ============ Accordion exclusive open ============ */
+  const accGroup = document.querySelectorAll('#expertise-acc .acc-item');
+  accGroup.forEach((d) => {
+    d.addEventListener('toggle', () => {
+      if (d.open) {
+        accGroup.forEach((o) => { if (o !== d) o.open = false; });
+      }
+    });
+  });
+
   /* ============ Footer year ============ */
   const y = document.getElementById('year');
   if (y) y.textContent = new Date().getFullYear();

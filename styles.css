@@ -902,15 +902,16 @@ p { color: var(--gris-60); }
 .acc-item[open] { background: #fff; }
 
 .acc-item summary {
-  display: grid;
-  grid-template-columns: auto 1fr auto auto;
+  display: flex;
   align-items: center;
-  gap: 1.5rem;
+  flex-wrap: nowrap;
+  gap: 1.2rem;
   padding: 1.8rem 2rem;
   cursor: pointer;
   list-style: none;
   transition: padding 0.4s var(--ease);
 }
+.acc-item summary .acc-title { flex: 1; min-width: 0; }
 .acc-item summary::-webkit-details-marker { display: none; }
 .acc-item summary:hover { background: rgba(217, 158, 43, 0.04); }
 .acc-item[open] summary { padding-bottom: 1.2rem; }
@@ -1012,12 +1013,11 @@ p { color: var(--gris-60); }
 
 @media (max-width: 800px) {
   .acc-item summary {
-    grid-template-columns: auto 1fr auto;
-    gap: 0.9rem;
+    gap: 0.7rem;
     padding: 1.3rem 1.2rem;
   }
   .acc-sub { display: none; }
-  .acc-tag { grid-column: 2; justify-self: start; padding: 0.2rem 0.55rem; font-size: 0.65rem; }
+  .acc-tag { padding: 0.2rem 0.55rem; font-size: 0.65rem; }
   .acc-body { grid-template-columns: 1fr; gap: 1.2rem; padding: 0 1.2rem 1.5rem; }
   .acc-title { font-size: 1.35rem; }
 }

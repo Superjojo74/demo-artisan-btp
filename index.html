@@ -28,6 +28,7 @@
     </a>
     <nav class="nav-links" aria-label="Navigation principale">
       <a href="#expertise">Métiers</a>
+      <a href="#chantiers">Réalisations</a>
       <a href="#approche">Atelier</a>
       <a href="#process">Méthode</a>
       <a href="#equipe">Équipe</a>
@@ -173,85 +174,165 @@
         </p>
       </div>
 
-      <div class="services-grid">
-        <article class="service reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 28h24M6 28V12l10-6 10 6v16M12 28v-8h8v8"/></svg>
-          </div>
-          <h3>Maçonnerie</h3>
-          <p>Murs porteurs, cloisons, dalles, fondations. Pierre naturelle, brique, parpaing, béton armé. Tous travaux courants et restauration.</p>
-          <ul>
-            <li>Ouvrages neufs &amp; rénovation</li>
-            <li>Reprise en sous-œuvre</li>
-            <li>Pierre &amp; moellons traditionnels</li>
-          </ul>
-        </article>
+      <div class="accordion reveal" id="expertise-acc">
 
-        <article class="service service--featured reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 28h26M5 28V14h22v14M5 14L16 4l11 10M11 28v-7h4v7M17 28v-7h4v7"/></svg>
+        <details class="acc-item" open>
+          <summary>
+            <span class="acc-num">01</span>
+            <span class="acc-title">Maçonnerie</span>
+            <span class="acc-sub">Murs porteurs · pierre · béton armé</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Maçon traditionnel — pose de moellons" />
+            </div>
+            <div class="acc-content">
+              <p>Murs porteurs, cloisons, dalles, fondations. Pierre naturelle, brique, parpaing, béton armé. Tous travaux courants et restauration de bâti ancien.</p>
+              <ul>
+                <li>Ouvrages neufs &amp; rénovation</li>
+                <li>Reprise en sous-œuvre</li>
+                <li>Pierre &amp; moellons traditionnels</li>
+                <li>Béton banché &amp; coffrage bois</li>
+              </ul>
+            </div>
           </div>
-          <h3>Gros œuvre</h3>
-          <p>Conception et exécution d'ouvrages complets : maison individuelle, immeuble locatif, transformation lourde. Coordination tous corps d'état.</p>
-          <ul>
-            <li>Maison individuelle clé en main</li>
-            <li>Immeubles locatifs &amp; PPE</li>
-            <li>Direction de travaux</li>
-          </ul>
-          <span class="service-badge">Spécialité</span>
-        </article>
+        </details>
 
-        <article class="service reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 16l12-12 12 12M6 16v12h20V16M14 28v-8h4v8"/></svg>
+        <details class="acc-item">
+          <summary>
+            <span class="acc-num">02</span>
+            <span class="acc-title">Gros œuvre</span>
+            <span class="acc-sub">Maison · immeuble · transformation lourde</span>
+            <span class="acc-tag">Spécialité</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1590725140246-20acdee442be?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Gros œuvre — structure en cours" />
+            </div>
+            <div class="acc-content">
+              <p>Conception et exécution d'ouvrages complets : maison individuelle, immeuble locatif, transformation lourde. Coordination de tous les corps d'état.</p>
+              <ul>
+                <li>Maison individuelle clé en main</li>
+                <li>Immeubles locatifs &amp; PPE</li>
+                <li>Direction de travaux SIA</li>
+                <li>Plans d'exécution &amp; coordination</li>
+              </ul>
+            </div>
           </div>
-          <h3>Rénovation</h3>
-          <p>Appartements, villas, immeubles anciens, bâtiments historiques. Du diagnostic à la livraison clés en main, dans le respect du bâti existant.</p>
-          <ul>
-            <li>Rénovation complète d'appartement</li>
-            <li>Restauration de bâti ancien</li>
-            <li>Surélévation &amp; agrandissement</li>
-          </ul>
-        </article>
+        </details>
 
-        <article class="service reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h24v24H4z"/><path d="M4 12h24M4 20h24M12 4v24M20 4v24"/></svg>
+        <details class="acc-item">
+          <summary>
+            <span class="acc-num">03</span>
+            <span class="acc-title">Rénovation</span>
+            <span class="acc-sub">Appartements · villas · bâti ancien</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Rénovation d'intérieur" />
+            </div>
+            <div class="acc-content">
+              <p>Appartements, villas, immeubles anciens, bâtiments historiques. Du diagnostic à la livraison clés en main, dans le respect du bâti existant.</p>
+              <ul>
+                <li>Rénovation complète d'appartement</li>
+                <li>Restauration de bâti ancien</li>
+                <li>Surélévation &amp; agrandissement</li>
+                <li>Mise aux normes &amp; accessibilité</li>
+              </ul>
+            </div>
           </div>
-          <h3>Second œuvre</h3>
-          <p>Cloisons, plâtrerie, faux-plafonds, chapes, carrelage, parquet, peinture. Une équipe finition pour les détails qui font la différence.</p>
-          <ul>
-            <li>Plâtrerie &amp; peinture</li>
-            <li>Chapes &amp; revêtements</li>
-            <li>Menuiserie intérieure</li>
-          </ul>
-        </article>
+        </details>
 
-        <article class="service reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 22l8-8 6 6 14-14M22 6h8v8"/></svg>
+        <details class="acc-item">
+          <summary>
+            <span class="acc-num">04</span>
+            <span class="acc-title">Second œuvre</span>
+            <span class="acc-sub">Plâtrerie · peinture · revêtements</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Finitions intérieures" />
+            </div>
+            <div class="acc-content">
+              <p>Cloisons, plâtrerie, faux-plafonds, chapes, carrelage, parquet, peinture. Une équipe finition pour les détails qui font la différence.</p>
+              <ul>
+                <li>Plâtrerie &amp; peinture</li>
+                <li>Chapes &amp; revêtements de sol</li>
+                <li>Menuiserie intérieure sur mesure</li>
+                <li>Carrelage &amp; faïence</li>
+              </ul>
+            </div>
           </div>
-          <h3>Terrassement</h3>
-          <p>Excavation, fondations, drainage, aménagements extérieurs et accès. Engins en propre, conducteurs formés, sécurité chantier irréprochable.</p>
-          <ul>
-            <li>Terrassement &amp; déblais</li>
-            <li>Fondations &amp; radiers</li>
-            <li>Aménagements extérieurs</li>
-          </ul>
-        </article>
+        </details>
 
-        <article class="service reveal">
-          <div class="service-icon">
-            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 4v6M4 28h24M8 28V14h16v14M12 14V8M20 14V8M12 28v-6h8v6"/></svg>
+        <details class="acc-item">
+          <summary>
+            <span class="acc-num">05</span>
+            <span class="acc-title">Terrassement</span>
+            <span class="acc-sub">Excavation · fondations · accès</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1517089596392-fb9a9033e05b?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Terrassement et excavation" />
+            </div>
+            <div class="acc-content">
+              <p>Excavation, fondations, drainage, aménagements extérieurs et accès. Engins en propre, conducteurs formés SUVA, sécurité chantier irréprochable.</p>
+              <ul>
+                <li>Terrassement &amp; déblais</li>
+                <li>Fondations &amp; radiers</li>
+                <li>Drainage &amp; canalisations</li>
+                <li>Aménagements extérieurs</li>
+              </ul>
+            </div>
           </div>
-          <h3>Isolation &amp; énergie</h3>
-          <p>Isolation périphérique, thermique, phonique. Standards Minergie et CECB. Améliorez le confort et la valeur de votre bien.</p>
-          <ul>
-            <li>ITE — isolation extérieure</li>
-            <li>Toitures &amp; combles</li>
-            <li>Subventions cantonales</li>
-          </ul>
-        </article>
+        </details>
+
+        <details class="acc-item">
+          <summary>
+            <span class="acc-num">06</span>
+            <span class="acc-title">Isolation &amp; énergie</span>
+            <span class="acc-sub">Minergie · CECB · subventions</span>
+            <span class="acc-chev" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5v14"/></svg>
+            </span>
+          </summary>
+          <div class="acc-body">
+            <div class="acc-media">
+              <img src="https://images.unsplash.com/photo-1604709177225-055f99402ea3?w=1000&q=80&auto=format&fit=crop"
+                   loading="lazy" decoding="async" alt="Isolation de façade" />
+            </div>
+            <div class="acc-content">
+              <p>Isolation périphérique, thermique, phonique. Standards Minergie et CECB. Améliorez le confort et la valeur de votre bien.</p>
+              <ul>
+                <li>ITE — isolation thermique extérieure</li>
+                <li>Toitures &amp; combles</li>
+                <li>Étanchéité à l'air</li>
+                <li>Accompagnement subventions cantonales</li>
+              </ul>
+            </div>
+          </div>
+        </details>
+
       </div>
     </div>
   </section>
@@ -301,6 +382,87 @@
           <li class="reveal"><strong>Atelier intégré.</strong> Maçons, plâtriers, charpentiers : tous salariés, formés en interne, équipés en propre.</li>
           <li class="reveal"><strong>Garantie 10 ans.</strong> Sur la structure et la maçonnerie. Et un rappel à 12 mois pour reprendre ce qui doit l'être.</li>
         </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 6b. GALLERY — Chantiers récents               -->
+  <!-- ============================================ -->
+  <section class="gallery section" id="chantiers">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <span class="kicker reveal">Réalisations</span>
+          <h2 class="reveal">Des chantiers récents,<br/>livrés <em>à Genève et alentours</em>.</h2>
+        </div>
+        <p class="section-lede reveal">
+          Six réalisations parmi plus de mille deux cents. Du gros œuvre neuf
+          à la restauration d'un immeuble du XIX<sup>e</sup>, en passant
+          par la rénovation lourde de villas et appartements de standing.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item gallery-item--lg reveal">
+          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1400&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Construction d'immeuble" />
+          <figcaption>
+            <span class="gallery-cat">Gros œuvre</span>
+            <span class="gallery-title">Immeuble locatif · 18 logements</span>
+            <span class="gallery-loc">Vernier · 2024</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Rénovation appartement contemporain" />
+          <figcaption>
+            <span class="gallery-cat">Rénovation</span>
+            <span class="gallery-title">Appartement 5 pièces · Champel</span>
+            <span class="gallery-loc">Genève · 2024</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1000&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Chantier en cours" />
+          <figcaption>
+            <span class="gallery-cat">Transformation</span>
+            <span class="gallery-title">Surélévation villa · Vandœuvres</span>
+            <span class="gallery-loc">Genève · 2023</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1000&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Isolation de façade" />
+          <figcaption>
+            <span class="gallery-cat">Isolation</span>
+            <span class="gallery-title">ITE immeuble locatif</span>
+            <span class="gallery-loc">Carouge · 2023</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item reveal">
+          <img src="https://images.unsplash.com/photo-1572883454114-1cf0031ede2a?w=1000&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Restauration bâti ancien" />
+          <figcaption>
+            <span class="gallery-cat">Restauration</span>
+            <span class="gallery-title">Immeuble inscrit XIX<sup>e</sup></span>
+            <span class="gallery-loc">Vieille-Ville · 2022</span>
+          </figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-item--lg reveal">
+          <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1400&q=80&auto=format&fit=crop"
+               loading="lazy" decoding="async" alt="Intérieur villa contemporaine" />
+          <figcaption>
+            <span class="gallery-cat">Villa clé en main</span>
+            <span class="gallery-title">Maison individuelle 280 m²</span>
+            <span class="gallery-loc">Cologny · 2024</span>
+          </figcaption>
+        </figure>
       </div>
     </div>
   </section>
